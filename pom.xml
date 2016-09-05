@@ -6,7 +6,18 @@
 
     <groupId>com.pet.adobt</groupId>
     <artifactId>pet-adobt</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>pet-adobt-domain</module>
+        <module>pet-adobt-dao</module>
+        <module>pet-adobt-api</module>
+        <module>pet-adobt-inner-api</module>
+        <module>pet-adobt-service</module>
+        <module>pet-adobt-rpc</module>
+        <module>pet-adobt-web</module>
+        <module>pet-adobt-worker</module>
+    </modules>
 
 
 </project>
