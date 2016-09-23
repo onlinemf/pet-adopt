@@ -17,16 +17,74 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+      <profile default="false" name="Annotation profile for pet-adobt-web" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="pet-adobt" />
+        <module name="pet-adobt-web" />
+      </profile>
+      <profile default="false" name="Annotation profile for pet-adobt-rpc" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="pet-adobt-rpc" />
+      </profile>
+      <profile default="false" name="Annotation profile for pet-adobt-worker" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="pet-adobt-worker" />
+      </profile>
+      <profile default="false" name="Annotation profile for pet-adobt-domain" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="pet-adobt-domain" />
+      </profile>
+      <profile default="false" name="Annotation profile for pet-adobt-api" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="pet-adobt-api" />
+      </profile>
+      <profile default="false" name="Annotation profile for pet-adobt-inner-api" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="pet-adobt-inner-api" />
+      </profile>
+      <profile default="false" name="Annotation profile for pet-adobt-service" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="pet-adobt-service" />
+      </profile>
+      <profile default="false" name="Annotation profile for pet-adobt-dao" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="pet-adobt-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="pet-adobt" target="1.5" />
+      <module name="pet-adobt" target="1.6" />
+      <module name="pet-adobt-api" target="1.6" />
+      <module name="pet-adobt-dao" target="1.6" />
+      <module name="pet-adobt-domain" target="1.6" />
+      <module name="pet-adobt-inner-api" target="1.6" />
+      <module name="pet-adobt-rpc" target="1.6" />
+      <module name="pet-adobt-service" target="1.6" />
+      <module name="pet-adobt-web" target="1.6" />
+      <module name="pet-adobt-worker" target="1.6" />
+      <module name="pet-adopt-test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
