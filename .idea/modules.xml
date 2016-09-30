@@ -4,19 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pet-adobt.iml" filepath="$PROJECT_DIR$/pet-adobt.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-adobt-api/pet-adobt-api.iml" filepath="$PROJECT_DIR$/pet-adobt-api/pet-adobt-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pet-adobt-api/pet-adobt-api.iml" filepath="$PROJECT_DIR$/pet-adobt-api/pet-adobt-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-adobt-dao/pet-adobt-dao.iml" filepath="$PROJECT_DIR$/pet-adobt-dao/pet-adobt-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-adobt-domain/pet-adobt-domain.iml" filepath="$PROJECT_DIR$/pet-adobt-domain/pet-adobt-domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pet-adobt-domain/pet-adobt-domain.iml" filepath="$PROJECT_DIR$/pet-adobt-domain/pet-adobt-domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pet-adobt-inner-api/pet-adobt-inner-api.iml" filepath="$PROJECT_DIR$/pet-adobt-inner-api/pet-adobt-inner-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-adobt-inner-api/pet-adobt-inner-api.iml" filepath="$PROJECT_DIR$/pet-adobt-inner-api/pet-adobt-inner-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-adobt-rpc/pet-adobt-rpc.iml" filepath="$PROJECT_DIR$/pet-adobt-rpc/pet-adobt-rpc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pet-adobt-rpc/pet-adobt-rpc.iml" filepath="$PROJECT_DIR$/pet-adobt-rpc/pet-adobt-rpc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pet-adobt-service/pet-adobt-service.iml" filepath="$PROJECT_DIR$/pet-adobt-service/pet-adobt-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-adobt-service/pet-adobt-service.iml" filepath="$PROJECT_DIR$/pet-adobt-service/pet-adobt-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-adobt-web/pet-adobt-web.iml" filepath="$PROJECT_DIR$/pet-adobt-web/pet-adobt-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pet-adobt-web/pet-adobt-web.iml" filepath="$PROJECT_DIR$/pet-adobt-web/pet-adobt-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pet-adobt-worker/pet-adobt-worker.iml" filepath="$PROJECT_DIR$/pet-adobt-worker/pet-adobt-worker.iml" />
       <module fileurl="file://$PROJECT_DIR$/pet-adobt-worker/pet-adobt-worker.iml" filepath="$PROJECT_DIR$/pet-adobt-worker/pet-adobt-worker.iml" />
     </modules>
   </component>

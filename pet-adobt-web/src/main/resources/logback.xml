@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%t %d{yyyy-MM-dd HH:mm:ss} %-5p]-%c %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="pet-adopt-debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${mvn.log.path}/web.pet.adopt.com/pet-adopt-debug.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${mvn.log.path}/web.pet.adopt.com/pet-adopt-debug.%i.log</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>30</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>500MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss,SSS}[%thread] %-5p]-%c %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>      
+            <onMismatch>DENY</onMismatch>  
+        </filter>
+    </appender>
+
+    <appender name="com.pet.adopt-error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${mvn.log.path}/web.pet.adopt.com/web-pet-adopt-error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${mvn.log.path}/web.pet.adopt.com/web-pet-adopt-error.%i.log</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>30</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>500MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}[%thread] %-5p]-%c %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>      
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="web-pet-adopt-mybatis" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${mvn.log.path}/web.pet.adopt.com/web-pet-adopt-mybatis.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${mvn.log.path}/web.pet.adopt.com/web-pet-adopt-mybatis.%i.log</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>30</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>500MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}[%thread] %-5p]-%c %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+    </appender>
+
+    <logger name="com.pet.adopt.web" additivity="false" level="INFO">
+        <appender-ref ref="pet-adopt-debug" />
+        <appender-ref ref="pet-adopt-error" />
+        <!--<appender-ref ref="STDOUT" />-->
+    </logger>
+    <logger name="com.jd.josl.privilege" additivity="false" level="INFO">
+        <appender-ref ref="pet-adopt-debug" />
+        <appender-ref ref="pet-adopt-error" />
+    </logger>
+
+    <logger name="java.sql" additivity="false" level="warn"><appender-ref ref="pet-adopt-debug"/></logger>
+    <logger name="org.apache.ibatis" additivity="false" level="warn"><appender-ref ref="pet-adopt-debug"/></logger>
+    <logger name="java.sql.PreparedStatement" additivity="false" level="INFO"><appender-ref ref="pet-adopt-debug"/></logger>
+    <logger name="java.sql.ResultSet" additivity="false" level="INFO"><appender-ref ref="pet-adopt-debug"/></logger>
+    <logger name="java.sql.Connection" additivity="false" level="INFO"><appender-ref ref="pet-adopt-debug"/></logger>
+
+    <logger name="com.pet.adopt.launcher" additivity="false" level="DEBUG">
+        <!--<appender-ref ref="pet-adopt-debug" />-->
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <root level="DEBUG">
+        <!--<appender-ref ref="pet-adopt-debug" />-->
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

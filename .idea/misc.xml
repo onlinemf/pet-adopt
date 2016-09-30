@@ -4,6 +4,7 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/pet-adobt-service" />
     <file type="web" url="file://$PROJECT_DIR$/pet-adobt-web" />
   </component>
   <component name="MavenProjectsManager">
